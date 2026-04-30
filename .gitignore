@@ -1,0 +1,9 @@
+# 忽略 IntelliJ IDEA 配置
+.idea/
+*.iml
+
+# 忽略编译输出目录
+target/
+
+# 忽略本地存储的临时文件（视你们项目需求而定，通常 storage 里的业务文件不提交）
+storage/
