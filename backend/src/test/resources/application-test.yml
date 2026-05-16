@@ -2,7 +2,7 @@ spring:
   datasource:
     url: ${TEST_DB_URL:${DB_URL:jdbc:mysql://127.0.0.1:3306/xtu_system_test?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false}}
     username: ${TEST_DB_USERNAME:${DB_USERNAME:root}}
-    password: ${TEST_DB_PASSWORD:${DB_PASSWORD:root}}
+    password: ${TEST_DB_PASSWORD:${DB_PASSWORD:123456}}
     driver-class-name: com.mysql.cj.jdbc.Driver
   sql:
     init:

@@ -1,0 +1,22 @@
+[Unit]
+Description=XTU System Backend
+After=network.target mysql.service
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/xtu-system/backend
+Environment=SPRING_PROFILES_ACTIVE=dev
+Environment=SERVER_PORT=8080
+Environment=DB_URL=jdbc:mysql://127.0.0.1:3306/xtu_system?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&useSSL=false
+Environment=DB_USERNAME=root
+Environment=DB_PASSWORD=123456
+Environment=JWT_SECRET=XTUIntegratedInformationSystemJwtSecretKey2026SpringBoot
+Environment=STORAGE_UPLOAD_DIR=/opt/xtu-system/backend/storage/uploads
+ExecStart=/usr/bin/java -jar /opt/xtu-system/backend/xtu-system-backend.jar
+Restart=always
+RestartSec=5
+User=www-data
+Group=www-data
+
+[Install]
+WantedBy=multi-user.target
