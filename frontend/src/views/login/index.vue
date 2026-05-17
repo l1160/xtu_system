@@ -4,6 +4,9 @@
             <section class="intro">
                 <div class="eyebrow">XTU SYSTEM</div>
                 <h1>综合信息管理系统</h1>
+                <p>
+                    统一账号、统一权限、统一数据入口。当前脚手架已接入登录、工作台和用户管理示例模块。
+                </p>
                 <ul>
                     <li>账号：`admin`</li>
                     <li>密码：`admin123`</li>
