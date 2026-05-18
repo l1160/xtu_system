@@ -304,9 +304,9 @@ deploy/
     └── restore_mysql.sh
 ```
 
-## Release 发布建议
+## Release 发布
 
-可以将结项版发布为 GitHub Release，例如 `v1.0.0`。建议附件包含：
+已发布 GitHub Release`v1.0.0`。附件包含：
 
 - 后端 jar：`backend/target/xtu-system-backend-0.1.0.jar`
 - 前端构建包：`frontend/dist/`
